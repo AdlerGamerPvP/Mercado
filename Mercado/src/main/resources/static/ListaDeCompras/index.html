@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<main class="container">
+    <header class="topo">
+        <div>
+            <p class="eyebrow">ORGANIZAÇÃO DO DIA A DIA</p>
+            <h1>Lista de Compras</h1>
+            <p>Cadastre produtos, organize listas e acompanhe suas compras.</p>
+        </div>
+        <div class="status-api" id="statusApi"><span class="status-dot"></span>Conectando à API...</div>
+    </header>
+
+    <nav class="navigation" aria-label="Seções do sistema">
+        <button class="nav-button active" data-entity="items">Itens</button>
+        <button class="nav-button" data-entity="lists">Listas</button>
+        <button class="nav-button" data-entity="products">Produtos</button>
+        <button class="nav-button" data-entity="categories">Categorias</button>
+        <button class="nav-button" data-entity="users">Usuários</button>
+    </nav>
+
+    <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
+    <section id="content" class="content-panel">
+        <p class="loading">Carregando informações...</p>
+    </section>
+    <footer>
+        <span>API REST · Spring Boot · MySQL</span>
+        <a href="/swagger-ui.html" target="_blank" rel="noopener">Documentação da API</a>
+    </footer>
+</main>
+<script src="./js/script.js"></script>
+</body>
+</html>
